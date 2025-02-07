@@ -12,8 +12,7 @@ import os
 import sys
 import unittest
 
-import ujson
-
+import json as ujson
 
 def test():
     """Iterate through all files in 'resources'
