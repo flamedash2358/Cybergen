@@ -48,8 +48,7 @@
         "weight": 30,
         "event_text": "m_c was hunting on a night patrol and nearly got carried off by an owl! {PRONOUN/m_c/subject/CAP}{VERB/m_c/'re/'s} alive, but with many a scratch as proof of {PRONOUN/m_c/poss} adventure.",
         "m_c": {
-            "status": [
-                "apprentice"]
+            "status": ["apprentice"]
         },
         "injury": [
             {
@@ -231,11 +230,11 @@
         },
         "r_c": {
             "status": ["apprentice"],
-            "trait": [ "daring", "adventurous", "oblivious", "bold", "childish"]
+            "trait": ["daring", "adventurous", "oblivious", "bold", "childish"]
         },
         "injury": [
             {
-                "cats": [ "m_c", "r_c"], 
+                "cats": ["m_c", "r_c"], 
                 "injuries": ["shivering"],
                 "scars": ["FROSTMITT", "FROSTSOCK"]
             }
