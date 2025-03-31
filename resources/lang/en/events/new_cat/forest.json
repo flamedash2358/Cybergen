@@ -12,7 +12,7 @@
         "new_cat": [
             ["backstory:abandoned1, abandoned4", "age:kitten"]
         ],
-		"relationships": [
+	"relationships": [
           {
             "cats_from": ["m_c"],
             "cats_to": ["n_c:0"],
@@ -40,7 +40,7 @@
         "new_cat": [
             ["backstory:abandoned1, abandoned4", "age:kitten"]
         ],
-		"relationships": [
+	"relationships": [
           {
             "cats_from": ["m_c"],
             "cats_to": ["n_c:0"],
