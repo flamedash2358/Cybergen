@@ -9,7 +9,7 @@
       "new_thought": "Heard rumors that a Clan was hunting for {PRONOUN/m_c/object}",
       "relationships": [
         {
-          "cats_to": [ "clan" ],
+          "cats_to": ["clan"],
           "cats_from": ["m_c"],
           "values": ["dislike"],
           "amount": 15
@@ -27,7 +27,7 @@
       "new_thought": "Heard rumors that a Clan was hunting for {PRONOUN/m_c/object}",
       "relationships": [
         {
-          "cats_to": [ "clan" ],
+          "cats_to": ["clan"],
           "cats_from": ["m_c"],
           "values": ["dislike"],
           "amount": 15
@@ -45,7 +45,7 @@
       "new_thought": "Heard rumors that a Clan was hunting for {PRONOUN/m_c/object}",
       "relationships": [
         {
-          "cats_to": [ "clan" ],
+          "cats_to": ["clan"],
           "cats_from": ["m_c"],
           "values": ["dislike"],
           "amount": 15
@@ -200,7 +200,7 @@
       "new_thought": "Heard rumors that a Clan was looking for {PRONOUN/m_c/object}",
       "relationships": [
         {
-          "cats_to": [ "clan" ],
+          "cats_to": ["clan"],
           "cats_from": ["m_c"],
           "values": ["dislike"],
           "amount": 15
@@ -218,7 +218,7 @@
       "new_thought": "Heard rumors that a Clan was looking for {PRONOUN/m_c/object}",
       "relationships": [
         {
-          "cats_to": [ "clan" ],
+          "cats_to": ["clan"],
           "cats_from": ["m_c"],
           "values": ["dislike"],
           "amount": 15
@@ -288,7 +288,7 @@
     "rep_change": -1,
     "m_c": {
       "status": ["exiled"],
-      "trait": [ "bloodthirsty", "vengeful", "fierce", "cold" ],
+      "trait": ["bloodthirsty", "vengeful", "fierce", "cold"],
       "new_thought": "Spits at {PRONOUN/m_c/poss} Clanmates' retreating tails",
       "relationships": [
         {
@@ -433,7 +433,7 @@
     "rep_change": -1,
     "m_c": {
       "status": ["rogue", "kittypet", "loner", "former Clancat"],
-      "skill": [ "GHOST,1" ],
+      "skill": ["GHOST,1"],
       "new_thought": "Shivers, thanking the spirit that warned {PRONOUN/m_c/object}",
       "relationships": [
         {
