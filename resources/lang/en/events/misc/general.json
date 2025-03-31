@@ -1564,7 +1564,7 @@
            "cats_to": ["m_c"],
             "cats_from": ["r_c"],
             "mutual": true,
-            "values": [ "platonic", "comfort"],
+            "values": ["platonic", "comfort"],
             "amount": -5
           }
         ]
