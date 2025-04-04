@@ -1,0 +1,51 @@
+[
+   {
+        "event_id": "dst_injury_bruisessore_anymultiage1",
+        "location": ["desert"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was out in the territory and took a bad tumble over a rock hidden by the dusty ground.",
+        "m_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["bruises", "sore"]
+            }
+        ]
+    },
+   {
+        "event_id": "dst_injury_scrapessmallcuts_appmultitrait1",
+        "location": ["desert"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c dashes off from {PRONOUN/m_c/poss} mentor and tumbles face first into a cactus, thankfully the medicine cat is able to remove the spines with little difficulty.",
+        "m_c": {
+            "age": ["adolescent"],
+            "trait": ["adventurous", "arrogant", "bold", "childish", "confident", "daring", "oblivious", "playful", "rebellious", "shameless", "troublesome"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["scrapes", "small cut"]
+            }
+        ]
+    },
+   {
+        "event_id": "dst_injury_snake_any1",
+        "location": ["desert"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "A snake managed to slither its way into camp and m_c got bitten by it.",
+        "m_c": {
+            "age": ["any"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["snake bite"]
+            }
+        ]
+    }
+]

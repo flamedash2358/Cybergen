@@ -1,0 +1,117 @@
+[
+  {
+          "event_id": "dst_death_any_rattlesnake1",
+          "location": ["desert"],
+          "season": ["any"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c was killed by a rattlesnake out in the territory.",
+          "m_c": {
+              "status": ["apprentice", "warrior", "deputy", "leader"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was killed by a rattlesnake.",
+              "lead_death": "{VERB/m_c/were/was} killed by a rattlesnake."
+              }
+          ]
+  },
+  {
+          "event_id": "dst_death_any_rattlesnake2",
+          "location": ["desert"],
+          "season": ["any"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c chased a kangaroo rat into a burrow, only to run right into the fangs of a surprised rattlesnake. {PRONOUN/m_c/subject/CAP} didn't make it back to camp...",
+          "m_c": {
+              "status": ["apprentice", "warrior", "deputy", "leader"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was killed by a rattlesnake.",
+              "lead_death": "{VERB/m_c/were/was} killed by a rattlesnake."
+              }
+          ]
+  },
+  {
+          "event_id": "dst_death_app_rattlesnake3",
+          "location": ["desert"],
+          "season": ["any"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c was out training {PRONOUN/m_c/poss} agility by jumping from rock to rock. {PRONOUN/m_c/subject/CAP} didn't notice the rattlesnake until their paw landed on top of it, earning {PRONOUN/m_c/object} a nasty bite and a lethal dose of venom.",
+          "m_c": {
+              "status": ["apprentice"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was killed by a rattlesnake.",
+              "lead_death": "{VERB/m_c/were/was} killed by a rattlesnake."
+              }
+          ]
+  },
+  {
+          "event_id": "dst_death_any_mirage1",
+          "location": ["desert"],
+          "season": ["greenleaf", "newleaf"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c was out alone in the territory searching for water, however the mirage from the intense heat led {PRONOUN/m_c/object} to keep walking further away from any real water source.",
+          "m_c": {
+              "status": ["apprentice", "warrior", "deputy", "leader"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was mislead by a mirage thinking it was water.",
+              "lead_death": "{VERB/m_c/were/was} mislead by a mirage thinking it was water."
+              }
+          ]
+  },
+  {
+          "event_id": "dst_death_any_scorpion1",
+          "location": ["desert"],
+          "season": ["any"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c was killed after being stung by a scorpion.",
+          "m_c": {
+              "status": ["apprentice", "warrior", "deputy", "leader"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was killed by a scorpion.",
+              "lead_death": "{VERB/m_c/were/was} killed by a scorpion."
+              }
+          ]
+  },
+  {
+          "event_id": "dst_death_any_multitraitscorpion2",
+          "location": ["desert"],
+          "season": ["any"],
+          "tags": [],
+          "weight": 20,
+          "event_text": "m_c was out hunting and spotted a scorpion, {PRONOUN/m_c/subject} pounced to catch it, but one misplaced paw on the stinger sent m_c to StarClan.",
+          "m_c": {
+              "status": ["apprentice", "warrior", "deputy", "leader"],
+              "trait": ["ambitious", "bold", "charismatic", "competitive", "daring", "flamboyant", "insecure", "strange", "troublesome"],
+              "dies": true
+          },
+          "history": [
+              {
+              "cats": ["m_c"],
+              "reg_death": "m_c was killed by a scorpion.",
+              "lead_death": "{VERB/m_c/were/was} killed by a scorpion."
+              }
+          ]
+  }
+]
