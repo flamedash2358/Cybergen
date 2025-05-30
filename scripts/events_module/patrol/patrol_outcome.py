@@ -482,6 +482,7 @@ class PatrolOutcome:
         for _cat in cats_to_kill:
             if _cat.status == "leader":
                 if "all_lives" in self.dead_cats:
+                    lives_lost = game.clan.leader_lives
                     game.clan.leader_lives = 0
                     results.append(
                         event_text_adjust(
