@@ -14,15 +14,15 @@
         "graduation_normal": "{PRONOUN/m_c/subject/CAP} graduated at %{age} moons old.",
         "graduation_late": "{PRONOUN/m_c/subject/CAP} graduated late at %{age} moons old.",
         "mentored": "{PRONOUN/m_c/subject/CAP} mentored %{apprentices}.",
-        "leader_death_final": "lost {PRONOUN/m_c/poss} final life",
-        "leader_death_all": "lost all of {PRONOUN/m_c/poss} lives",
-        "leader_death_remaining": "lost the rest of {PRONOUN/m_c/poss} lives",
+        "leader_death_final": "%{name} lost {PRONOUN/m_c/poss} final life",
+        "leader_death_all": "%{name} lost all of {PRONOUN/m_c/poss} lives",
+        "leader_death_remaining": "%{name} lost the rest of {PRONOUN/m_c/poss} lives",
         "leader_death_cardinal": {
-            "one": "lost {PRONOUN/m_c/poss} %{cardinal} life",
-            "many": "lost {PRONOUN/m_c/poss} %{cardinal} lives"
+            "one": "m_c lost {PRONOUN/m_c/poss} %{cardinal} life",
+            "many": "m_c lost {PRONOUN/m_c/poss} %{cardinal} lives"
         },
-        "leader_death_retired": "lost {PRONOUN/m_c/poss} last remaining life",
-        "leader_death_default": "lost a life",
+        "leader_death_retired": "%{name} lost {PRONOUN/m_c/poss} last remaining life",
+        "leader_death_default": "%{name} lost a life",
         "leader_lost_lives": {
             "one": "m_c lost a life.",
             "many": "m_c lost %{count} lives."
