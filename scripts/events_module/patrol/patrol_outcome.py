@@ -521,7 +521,7 @@ class PatrolOutcome:
                     count=len(catnames),
                 )
             )
-
+            
         return " ".join(results)
 
     def _handle_lost(self, patrol: "Patrol") -> str:
