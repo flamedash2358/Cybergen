@@ -360,7 +360,18 @@ def reformat(path):
 
                     if "multi_death" in event["tags"]:
                         event["tags"].remove("multi_death")
-                        new_format["r_c"]["dies"] = True
+    
+                        if "leader" in new_format["r_c"].get("status", []):
+                            try:
+                                lives_left = game.clan.leader_lives
+                            except NameError:
+                                lives_left = 1  # Default or raise error
+                            if lives_left > 1:
+                                new_format["r_c"]["lives_remaining"] = lives_left - 1
+                            else:
+                                new_format["r_c"]["dies"] = True
+                        else:
+                            new_format["r_c"]["dies"] = True
 
         if "new_cat" in path:
             new_format["new_cat"] = []
