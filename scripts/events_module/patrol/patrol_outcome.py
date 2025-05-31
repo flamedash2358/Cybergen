@@ -492,19 +492,28 @@ class PatrolOutcome:
                 elif "some_lives" in self.dead_cats:
                     lives_lost = random.randint(1, max(1, game.clan.leader_lives - 1))
                     game.clan.leader_lives -= lives_lost
-                    results.append(
+                    if lives_lost > 1:
+                        results.append(
                         event_text_adjust(
                             Cat,
-                            i18n.t("cat.history.leader_death_all", count=lives_lost),
+                            i18n.t("cat.history.leader_lost_lives.many", count=lives_lost),
                             main_cat=_cat,
+                            )
                         )
-                    )
+                    else:
+                        results.append(
+                        event_text_adjust(
+                            Cat,
+                            i18n.t("cat.history.leader_lost_lives.one", count=lives_lost),
+                            main_cat=_cat,
+                            )
+                        ) 
                 else:
                     game.clan.leader_lives -= 1
                     results.append(
                         event_text_adjust(
                             Cat,
-                            i18n.t("cat.history.leader_death_all", count=1),
+                            i18n.t("cat.history.leader_lost_lives.one", count=1),
                             main_cat=_cat,
                         )
                     )
