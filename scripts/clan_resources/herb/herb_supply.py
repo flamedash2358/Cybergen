@@ -50,6 +50,16 @@ class HerbSupply:
             if herb not in self.collected:
                 self.collected[herb] = 0
 
+        # temp bugfix test
+        missing = []
+        for herb in HERBS:  
+            if herb not in self.storage or herb not in self.collected:
+                missing.append(herb)
+        if missing:
+            print(f"DEBUG: Missing herb keys in supply after patch: {missing}")
+        else:
+            print("DEBUG: All expected herb keys present in herb supply.")
+
     @property
     def combined_supply_dict(self) -> dict:
         """
