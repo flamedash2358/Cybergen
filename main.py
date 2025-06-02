@@ -314,38 +314,18 @@ AllScreens.start_screen.screen_switches()
 
 # dev screen info now lives in scripts/screens/screens_core
 
-# load custom cursor
-try:
-    cursor_img = pygame.image.load("resources/images/cursor.png").convert_alpha()
-    custom_cursor = pygame.cursors.Cursor((9, 0), cursor_img)
-except Exception as e:
-    print(f"Could not load custom cursor: {e}")
-    custom_cursor = None
+cursor_img = pygame.image.load("resources/images/cursor.png").convert_alpha()
+cursor = pygame.cursors.Cursor((9, 0), cursor_img)
+disabled_cursor = pygame.cursors.Cursor(pygame.SYSTEM_CURSOR_ARROW)
 
-# load system cursor
-system_cursor = pygame.cursors.Cursor(pygame.SYSTEM_CURSOR_ARROW)
-
-# track current cursor because screw you incorrectly set parameter
-current_cursor = None
-
-while True:
+while 1:
     time_delta = clock.tick(game.switches["fps"]) / 1000.0
 
-    # decide which cursor to use
-    use_custom = game.settings["custom cursor"] and custom_cursor is not None
-    desired_cursor = "custom" if use_custom else "system"
-
-    # switch cursor only when needed for preformance
-    if current_cursor != desired_cursor:
-        try:
-            pygame.mouse.set_cursor(custom_cursor if use_custom else system_cursor)
-            current_cursor = desired_cursor
-        except Exception as e:
-            print(f"Cursor switch failed: {e}")
-            # fall back to system cursor
-            pygame.mouse.set_cursor(system_cursor)
-            current_cursor = "system"
-            
+    if game.settings["custom cursor"]:
+        if pygame.mouse.get_cursor() == disabled_cursor:
+            pygame.mouse.set_cursor(cursor)
+    elif pygame.mouse.get_cursor() == cursor:
+        pygame.mouse.set_cursor(disabled_cursor)
     # Draw screens
     # This occurs before events are handled to stop pygame_gui buttons from blinking.
     game.all_screens[game.current_screen].on_use()
