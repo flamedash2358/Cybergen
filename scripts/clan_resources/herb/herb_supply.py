@@ -43,22 +43,12 @@ class HerbSupply:
         # med den log for current moon
         self.log = []
 
-        # testing to try and unbreak a KeyError bug
+        # ensures all herbs in HERBS are present as keys in self.storage and self.collected because KEYERRORS SUCK
         for herb in self.base_herb_list:
             if herb not in self.storage:
                 self.storage[herb] = []
             if herb not in self.collected:
                 self.collected[herb] = 0
-
-        # temp bugfix test
-        missing = []
-        for herb in HERBS:  
-            if herb not in self.storage or herb not in self.collected:
-                missing.append(herb)
-        if missing:
-            print(f"DEBUG: Missing herb keys in supply after patch: {missing}")
-        else:
-            print("DEBUG: All expected herb keys present in herb supply.")
 
     @property
     def combined_supply_dict(self) -> dict:
