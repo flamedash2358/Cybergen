@@ -43,6 +43,13 @@ class HerbSupply:
         # med den log for current moon
         self.log = []
 
+        # testing to try and unbreak a KeyError bug
+        for herb in self.base_herb_list:
+            if herb not in self.storage:
+                self.storage[herb] = []
+            if herb not in self.collected:
+                self.collected[herb] = 0
+
     @property
     def combined_supply_dict(self) -> dict:
         """
