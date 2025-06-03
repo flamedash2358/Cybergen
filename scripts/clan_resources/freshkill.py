@@ -205,27 +205,30 @@ class FreshkillPile:
             :param list living_cats: list of living cats which should be fed
             :param additional_food_round: Whether this is a manual feeding from the freshkill pile, default False
         """
-        self.update_nutrition(living_cats)
+        # Filter living_cats to only those with a status in prey_requirement, because former clancats are clearly not living/j
+        cats_to_feed = [cat for cat in living_cats if cat.status in self.prey_requirement]
+
+        self.update_nutrition(cats_to_feed)
         # NOTE: this is for testing purposes
         if not game.clan:
-            self.tactic_status(living_cats, additional_food_round)
+            self.tactic_status(cats_to_feed, additional_food_round)
             return
 
         # NOTE: the tactics should have their own function for testing purposes
         if game.clan.clan_settings["younger first"]:
-            self.tactic_younger_first(living_cats, additional_food_round)
+            self.tactic_younger_first(cats_to_feed, additional_food_round)
         elif game.clan.clan_settings["less nutrition first"]:
-            self.tactic_less_nutrition_first(living_cats, additional_food_round)
+            self.tactic_less_nutrition_first(cats_to_feed, additional_food_round)
         elif game.clan.clan_settings["more experience first"]:
-            self.tactic_more_experience_first(living_cats, additional_food_round)
+            self.tactic_more_experience_first(cats_to_feed, additional_food_round)
         elif game.clan.clan_settings["hunter first"]:
-            self.tactic_hunter_first(living_cats, additional_food_round)
+            self.tactic_hunter_first(cats_to_feed, additional_food_round)
         elif game.clan.clan_settings["sick/injured first"]:
-            self.tactic_sick_injured_first(living_cats, additional_food_round)
+            self.tactic_sick_injured_first(cats_to_feed, additional_food_round)
         elif game.clan.clan_settings["by-status"]:
-            self.tactic_status(living_cats, additional_food_round)
+            self.tactic_status(cats_to_feed, additional_food_round)
         else:
-            self.tactic_status(living_cats, additional_food_round)
+            self.tactic_status(cats_to_feed, additional_food_round)
 
     def amount_food_needed(self):
         """Get the amount of freshkill the clan needs.
