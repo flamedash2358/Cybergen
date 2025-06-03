@@ -206,7 +206,7 @@ class FreshkillPile:
             :param additional_food_round: Whether this is a manual feeding from the freshkill pile, default False
         """
         # Filter living_cats to only those with a status in prey_requirement, because former clancats are clearly not living/j
-        cats_to_feed = [cat for cat in living_cats if cat.status in self.prey_requirement]
+        cats_to_feed = [cat for cat in living_cats if cat.status in PREY_REQUIREMENT]
 
         self.update_nutrition(cats_to_feed)
         # NOTE: this is for testing purposes
