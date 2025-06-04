@@ -108,6 +108,7 @@
         "consumed_prey": {
             "one": "One piece of prey was consumed.",
             "many": "%{count} pieces of prey were consumed."
-        }
+        },
+        "rosemary_used": "Rosemary was used for %{name}'s body."
     }
 }
