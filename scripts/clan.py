@@ -104,7 +104,6 @@ class Clan:
         starting_season="Newleaf",
         self_run_init_functions=True,
     ):
-        self.history = History()
         if name == "":
             return
 
@@ -410,8 +409,9 @@ class Clan:
         """
         TODO: DOCS
         """
+
         if leader:
-            self.history.add_lead_ceremony(leader)
+            leader.history.add_lead_ceremony()
             self.leader = leader
             Cat.all_cats[leader.ID].status_change("leader")
             self.leader_predecessors += 1
