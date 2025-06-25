@@ -108,3 +108,6 @@ class ShortEvent:
                 self.other_clan["changed"] = 0
         self.supplies = supplies if supplies else []
         self.new_gender = new_gender
+
+    def __repr__(self):
+        return f"{self.event_id} ({self.sub_type})"
