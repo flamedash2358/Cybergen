@@ -139,7 +139,8 @@
 
       ],
       "desert": [
-        ["the rattling of a snake", "the hiss of a snake"],
+        ["the rattling of a snake"],
+        ["the hiss of a snake"],
         ["the sound of a duststorm"]
 
       ]
@@ -181,7 +182,7 @@
 
       ],
       "desert": [
-        ["the smell of a carcass"],
+        ["the smell of a carcas"],
         ["the smell of a cactus in bloom"]
 
       ]
@@ -192,15 +193,14 @@
         ["the strength of a warrior", "the steadfastness of a warrior", "a warrior's loyalty"],
         ["the ache of an elder's bones", "the wisdom of an elder"],
         ["the sensation of falling"],
-        ["the weightlessness of flight"],
+        ["the feeling of flight"],
         ["a half-remembered promise"],
-        ["a foreboding feeling", "a foreboding dread"],
+        ["a foreboding feeling"],
         ["the embrace of a family"],
         ["the ache of wounds"]
-
       ],
       "forest": [
-        ["the thrill of running through the trees"]
+        ["the thrill of running across trees"]
 
       ],
       "plains": [
@@ -208,11 +208,11 @@
 
       ],
       "beach": [
-        ["the wrath of the ocean"]
+        ["the vigour of the ocean"]
 
       ],
       "mountainous": [
-        ["the wonder of the mountains"]
+        ["the wonder of the montains"]
 
       ],
       "wetlands": [
@@ -404,12 +404,12 @@
 
       ],
       "plains": [
-        ["the gentleness of grass"],
+        ["the gentlness of grass"],
         ["the agility of a rabbit"]
 
       ],
       "beach": [
-        ["the power of the waves"],
+        ["the power of waves"],
         ["the stealth of an octopus"]
 
       ],

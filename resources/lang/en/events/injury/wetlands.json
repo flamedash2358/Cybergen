@@ -1,1 +1,70 @@
-[]
+[
+  {
+        "event_id": "wtlnd_injury_sore_anymultiage1",
+        "location": ["wetlands"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "Earlier this moon m_c walked through an especially muddy and dense part of the territory, the next day {PRONOUN/m_c/subject} woke up sore.",
+        "m_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["sore"]
+            }
+        ]
+    },
+  {
+        "event_id": "wtlnd_injury_poisoned_app1",
+        "location": ["wetlands"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was out in the territory when {PRONOUN/m_c/subject} came across a cluster of red berries and ate some, later r_c found them barely alive and rushed {PRONOUN/m_c/object} back to camp.",
+        "m_c": {
+            "age": ["adolescent"],
+            "not_skill": ["HEALER,1"]
+        },
+        "r_c": {
+          "age": ["young adult", "adult", "senior adult"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["poisoned"]
+            }
+        ]
+    },
+  {
+        "event_id": "wtlnd_injury_smallcut_anymultiage1",
+        "location": ["wetlands"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was weaving through the undergrowth and nicked {PRONOUN/m_c/self} on the low branches of a spiky tree.",
+        "m_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["small cut"]
+            }
+        ]
+    },
+  {
+        "event_id": "wtlnd_injury_snakebite_anymultiage1",
+        "location": ["wetlands"],
+        "season": ["any"],
+        "weight": 20,
+        "event_text": "m_c was stalking through the tall grass of the marsh hunting, however {PRONOUN/m_c/subject} stepped on a hidden snake and it bit {PRONOUN/m_c/object}!",
+        "m_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"]
+        },
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["snake bite"]
+            }
+        ]
+    }
+]

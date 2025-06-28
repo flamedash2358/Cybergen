@@ -12,13 +12,7 @@
         },
         "new_cat": [
             ["age:has_kits", "meeting", "loner", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "adoptive:m_c",
-                "backstory:abandoned2, outsider1",
-                "litter"
-            ]
+            ["new_name", "parent:0", "adoptive:m_c", "backstory:abandoned2, outsider1", "litter"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -38,13 +32,7 @@
         },
         "new_cat": [
             ["age:has_kits", "meeting", "rogue", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "adoptive:m_c",
-                "backstory:abandoned2, outsider1",
-                "litter"
-            ]
+            ["new_name", "parent:0", "adoptive:m_c", "backstory:abandoned2, outsider1", "litter"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -64,13 +52,7 @@
         },
         "new_cat": [
             ["age:has_kits", "meeting", "clancat", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "adoptive:m_c",
-                "backstory:abandoned2, outsider1",
-                "litter"
-            ]
+            ["new_name", "parent:0", "adoptive:m_c", "backstory:abandoned2, outsider1", "litter"]
         ],
         "other_clan": {
             "current_rep": ["ally"],
@@ -90,13 +72,7 @@
         },
         "new_cat": [
             ["age:has_kits", "meeting", "kittypet", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "adoptive:m_c",
-                "backstory:abandoned2, outsider1",
-                "litter"
-            ]
+            ["new_name", "parent:0", "adoptive:m_c", "backstory:abandoned2, outsider1", "litter"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -116,13 +92,7 @@
         },
         "new_cat": [
             ["age:has_kits", "meeting", "unknown", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "adoptive:m_c",
-                "backstory:abandoned2, outsider1",
-                "litter"
-            ]
+            ["new_name", "parent:0", "adoptive:m_c", "backstory:abandoned2, outsider1", "litter"]
         ]
     },
     {
@@ -136,11 +106,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "backstory:abandoned1, abandoned2, orphaned3, orphaned4, outsider1",
-                "status:kitten"
-            ]
+            ["new_name", "backstory:abandoned1, abandoned2, orphaned3, orphaned4, outsider1", "status:kitten"]
         ]
     },
     {
@@ -150,25 +116,11 @@
         "weight": 5,
         "event_text": "m_c finds a loner near the border. It seems {PRONOUN/n_c:0/subject} {VERB/n_c:0/were/was} bringing {PRONOUN/n_c:0/poss} kit named n_c:1 to the Clan, as {PRONOUN/n_c:0/subject} could no longer care for {PRONOUN/n_c:1/object}.",
         "m_c": {
-            "status": [
-                "leader",
-                "deputy",
-                "warrior",
-                "medicine cat",
-                "apprentice",
-                "medicine cat apprentice",
-                "mediator",
-                "mediator apprentice"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },
         "new_cat": [
             ["age:has_kits", "meeting", "loner", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "backstory:abandoned2, outsider1",
-                "status:kitten"
-            ]
+            ["new_name", "parent:0", "backstory:abandoned2, outsider1", "status:kitten"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -182,25 +134,11 @@
         "weight": 5,
         "event_text": "m_c finds a kittypet near the border. It seems {PRONOUN/n_c:0/subject} {VERB/n_c:0/were/was} bringing {PRONOUN/n_c:0/poss} kit named n_c:1 to the Clan, as {PRONOUN/n_c:0/subject} could no longer care for {PRONOUN/n_c:1/object}.",
         "m_c": {
-            "status": [
-                "leader",
-                "deputy",
-                "warrior",
-                "medicine cat",
-                "apprentice",
-                "medicine cat apprentice",
-                "mediator",
-                "mediator apprentice"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },
         "new_cat": [
             ["age:has_kits", "meeting", "kittypet", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "backstory:abandoned2, outsider1",
-                "status:kitten"
-            ]
+            ["new_name", "parent:0", "backstory:abandoned2, outsider1", "status:kitten"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -214,17 +152,10 @@
         "weight": 5,
         "event_text": "m_c finds a rogue near the border. It seems {PRONOUN/n_c:0/subject} {VERB/n_c:0/were/was} bringing {PRONOUN/n_c:0/poss} kit named n_c:1 to the Clan, as {PRONOUN/n_c:0/subject} could no longer care for {PRONOUN/n_c:1/object}.",
         "m_c": {
-            "status": [
-                "leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },"new_cat": [
             ["age:has_kits", "meeting", "rogue", "can_birth"],
-            [
-                "new_name",
-                "parent:0",
-                "backstory:abandoned2, outsider1",
-                "status:kitten"
-            ]
+            ["new_name", "parent:0", "backstory:abandoned2, outsider1", "status:kitten"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -248,12 +179,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "loner",
-                "status:warrior",
-                "mate:m_c,r_c"
-            ]
+            ["old_name", "loner", "status:warrior", "mate:m_c,r_c"]
         ],
         "relationships": [
           {
@@ -297,12 +223,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "loner",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "loner", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["any"],
@@ -319,12 +240,7 @@
             "status": ["warrior", "deputy", "leader", "medicine cat"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "loner",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "loner", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -338,16 +254,9 @@
         "weight": 20,
         "event_text": "A loner waits on the border for a patrol and, finding one led by m_c, asks to join the Clan. The loner decides to keep {PRONOUN/n_c:0/poss} old name, n_c:0.",
         "m_c": {
-            "status": [
-                "leader", "deputy", "warrior", "medicine cat"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat"]
         },"new_cat": [
-            [
-                "old_name",
-                "loner",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "loner", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -365,12 +274,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "loner",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "loner", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -387,12 +291,7 @@
             "status": ["leader", "deputy", "warrior"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "loner",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "loner", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["hostile"],
@@ -410,12 +309,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "kittypet",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "kittypet", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -433,12 +327,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "kittypet",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "kittypet", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -455,12 +344,7 @@
             "status": ["leader", "deputy", "warrior", "medicine cat"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "kittypet",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "kittypet", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -474,17 +358,10 @@
         "weight": 20,
         "event_text": "A kittypet waits on the border for a patrol and, finding one led by m_c, asks to join the Clan. The kittypet decides to take on a more Clan-like name and is now called n_c:0.",
         "m_c": {
-            "status": [
-                "leader", "deputy", "warrior", "medicine cat"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "kittypet",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "kittypet", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -502,12 +379,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "rogue",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "rogue", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -525,12 +397,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "rogue",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "rogue", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["neutral","welcoming"],
@@ -547,12 +414,7 @@
             "status": ["leader", "deputy", "warrior", "medicine cat"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "rogue",
-                "status:warrior",
-                "exists"
-            ]
+            ["old_name", "rogue", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -569,12 +431,7 @@
             "status": ["leader", "deputy", "warrior", "medicine cat"]
         },
         "new_cat": [
-            [
-                "new_name",
-                "rogue",
-                "status:warrior",
-                "exists"
-            ]
+            ["new_name", "rogue", "status:warrior", "exists"]
         ],
         "outsider": {
             "current_rep": ["welcoming"],
@@ -593,12 +450,7 @@
             "status": ["any"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "clancat",
-                "status:warrior",
-                "backstory:refugee1,guided4,retired_leader,ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan1,otherclan2,otherclan3,otherclan4"
-            ]
+            ["old_name", "clancat", "status:warrior", "backstory:refugee1,guided4,retired_leader,ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan1,otherclan2,otherclan3,otherclan4"]
         ],
         "other_clan": {
             "current_rep": ["any"],
@@ -615,12 +467,7 @@
             "status": ["medicine cat", "leader", "warrior", "deputy", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },
         "new_cat": [
-            [
-                "old_name",
-                "clancat",
-                "status:warrior",
-                "backstory:refugee1,guided4,retired_leader,ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan1,otherclan2,otherclan3,otherclan4"
-            ]
+            ["old_name", "clancat", "status:warrior", "backstory:refugee1,guided4,retired_leader,ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan1,otherclan2,otherclan3,otherclan4"]
         ],
         "injury": [
            {
@@ -646,11 +493,7 @@
             ]
         },
         "new_cat": [
-          [
-            "old_name", 
-            "backstory:ostracized_warrior,disgraced1,disgraced2,otherclan", 
-            "status:warrior"
-          ]
+          ["old_name", "backstory:ostracized_warrior,disgraced1,disgraced2,otherclan", "status:warrior"]
         ],
         "other_clan": {
             "current_rep": ["any"],
@@ -665,16 +508,10 @@
         "weight": 10,
         "event_text": "n_c:0, the deputy of o_c_n, has defected to c_n in the war, m_c finds {PRONOUN/n_c:0/object} at the border. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/decide/decides} to keep {PRONOUN/n_c:0/poss} name.",
         "m_c": {
-            "status": [
-                "leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },
         "new_cat": [
-          [
-            "old_name", 
-            "backstory:ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan", 
-            "status:warrior"
-          ]
+          ["old_name", "backstory:ostracized_warrior,disgraced1,disgraced2,disgraced3,otherclan", "status:warrior"]
         ],
         "other_clan": {
             "current_rep": ["any"],
@@ -689,16 +526,10 @@
         "weight": 15,
         "event_text": "n_c:0, the medicine cat of o_c_n, has defected to c_n in the war, {PRONOUN/n_c:0/subject} {VERB/n_c:0/meet/meets} m_c at the border. {PRONOUN/n_c:0/subject/CAP} {VERB/n_c:0/decide/decides} to keep {PRONOUN/n_c:0/poss} name.",
         "m_c": {
-            "status": [
-                "leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"
-            ]
+            "status": ["leader", "deputy", "warrior", "medicine cat", "apprentice", "medicine cat apprentice", "mediator", "mediator apprentice"]
         },
         "new_cat": [
-          [
-            "old_name", 
-            "backstory:medicine_cat", 
-            "status:medicine_cat"
-          ]
+          ["old_name", "backstory:medicine_cat", "status:medicine_cat"]
         ],
         "other_clan": {
             "current_rep": ["any"],

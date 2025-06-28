@@ -66,23 +66,12 @@
 			}
 		},
 		"status_constraint": {
-			"m_c": [
-				"leader"
-			],
-			"r_c1": [
-				"warrior",
-				"deputy"
-			],
-			"r_c2": [
-				"warrior"
-			]
+			"m_c": ["leader"],
+			"r_c1": ["warrior", "deputy"],
+			"r_c2": ["warrior"]
 		},
 		"trait_constraint": {
-			"m_c": [
-				"bloodthirsty",
-				"vengeful", 
-				"fierce"
-			]
+			"m_c": ["bloodthirsty", "vengeful", "fierce"]
 		},
 		"specific_reaction": {
 			"m_c_to_r_c1": {
@@ -120,16 +109,9 @@
 		"cat_amount": 3,
 		"interactions": ["m_c and r_c1 discuss where they should be marking the border. r_c2 overhears, and disagrees with their decision, causing m_c and r_c1 to sneer at {PRONOUN/r_c2/object} in distaste."],
 		"status_constraint": {
-			"m_c": [
-				"leader"
-			],
-			"r_c1": [
-				"warrior",
-				"deputy"
-			],
-			"r_c2": [
-				"warrior"
-			]
+			"m_c": ["leader"],
+			"r_c1": ["warrior", "deputy"],
+			"r_c2": ["warrior"]
 		},
 		"trait_constraint": {
 			"m_c": ["bloodthirsty", "vengeful", "fierce", "bold"]

@@ -513,10 +513,11 @@ class PatrolOutcome:
         for _cat in cats_to_kill:
             if _cat.status == "leader":
                 if "all_lives" in self.dead_cats:
+                    lives_lost = game.clan.leader_lives
                     game.clan.leader_lives = 0
                     results.append(
                         event_text_adjust(
-                            Cat, i18n.t("cat.history.leader_death_all"), main_cat=_cat
+                            Cat, i18n.t("cat.history.n_leader_death_all"), main_cat=_cat
                         )
                     )
                 elif "some_lives" in self.dead_cats:
@@ -525,7 +526,7 @@ class PatrolOutcome:
                     results.append(
                         event_text_adjust(
                             Cat,
-                            i18n.t("cat.history.leader_death_all", count=lives_lost),
+                            i18n.t("cat.history.n_leader_lost_lives", count=lives_lost),
                             main_cat=_cat,
                         )
                     )
@@ -534,12 +535,13 @@ class PatrolOutcome:
                     results.append(
                         event_text_adjust(
                             Cat,
-                            i18n.t("cat.history.leader_death_all", count=1),
+                            i18n.t("cat.history.n_leader_lost_lives", count=1),
                             main_cat=_cat,
                         )
                     )
             else:
                 catnames.append(str(_cat.name))
+                
             # Kill Cat
             self.__handle_death_history(_cat, patrol)
             _cat.die(body)
@@ -551,7 +553,7 @@ class PatrolOutcome:
                     count=len(catnames),
                 )
             )
-
+            
         return " ".join(results)
 
     def _handle_lost(self, patrol: "Patrol") -> str:

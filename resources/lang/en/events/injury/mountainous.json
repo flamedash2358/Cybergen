@@ -7,13 +7,7 @@
         "event_text": "m_c thought {PRONOUN/m_c/subject} {VERB/m_c/were/was} walking on a snowdrift until it gave way and {PRONOUN/m_c/subject} fell down the mountain, breaking {PRONOUN/m_c/poss} leg.",
         "m_c": {
 
-            "age": [
-                "adolescent",
-                "young adult",
-                "adult",
-                "senior adult",
-                "senior"
-            ]
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
         },
         "injury": [
             {
@@ -38,13 +32,7 @@
         "weight": 20,
         "event_text": "m_c fell from a cliff and somehow survived, though not without breaking {PRONOUN/m_c/poss} leg.",
         "m_c": {
-            "age": [
-                "adolescent",
-                "young adult",
-                "adult",
-                "senior adult",
-                "senior"
-            ]
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
         },
         "injury": [
             {
@@ -69,13 +57,7 @@
         "weight": 20,
         "event_text": "m_c's tail was badly injured by falling rocks.",
         "m_c": {
-            "age": [
-                "adolescent",
-                "young adult",
-                "adult",
-                "senior adult",
-                "senior"
-            ]
+            "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
         },
         "injury": [
             {
@@ -117,30 +99,5 @@
                 "reg_death": "m_c died from {PRONOUN/m_c/poss} wounds after falling from a tall cliff."
         }
         ]
-    },
-    {
-        "event_id": "mtn_injury_war_cliffsaved",
-        "location": ["mountainous"],
-        "season": ["any"],
-        "sub_type": ["war"],
-        "weight": 20,
-        "event_text": "m_c acts without thinking, yanking the o_c_n warrior {PRONOUN/m_c/subject}'d been fighting back from the edge of the cliff and saving their life.",
-        "m_c": {
-            "status": ["warrior", "deputy", "leader", "apprentice"],
-            "age": ["adolescent", "young adult", "adult", "senior adult"]
-        },
-        "injury": [
-            {
-                "cats": [
-                    "m_c"
-                ],
-                "injuries": [
-                    "sore"
-                ]
-            }
-        ],
-        "other_clan": {
-            "changed": 2
-        }
-    }
+    }    
 ]
