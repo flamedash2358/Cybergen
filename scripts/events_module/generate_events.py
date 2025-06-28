@@ -279,6 +279,15 @@ class GenerateEvents:
                             f"{event.event_id} injury formatted incorrectly"
                         )
 
+            # ensure ID and requirements override
+            if (
+                event.event_id
+                == game.config["event_generation"]["debug_ensure_event_id"]
+                and game.config["event_generation"]["debug_override_requirements"]
+            ):
+                final_events.append(event)
+                break
+
             # check for event sub_type
             if set(event.sub_type) != set(sub_types):
                 continue
@@ -339,7 +348,10 @@ class GenerateEvents:
                     continue
 
             # check that injury is possible
-            if event.injury:
+            if (
+                event.injury
+                and game.config["event_generation"]["debug_type_override"] != "injury"
+            ):
                 # determine which injury severity list will be used
                 allowed_severity = None
                 discard = False
@@ -459,6 +471,14 @@ class GenerateEvents:
 
                 if discard:
                     continue
+
+            # ensure ID without requirements override
+            if (
+                event.event_id
+                == game.config["event_generation"]["debug_ensure_event_id"]
+            ):
+                final_events.append(event)
+                break
 
             final_events.extend([event] * event.weight)
 
