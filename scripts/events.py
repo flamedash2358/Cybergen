@@ -2113,29 +2113,6 @@ class Events:
                                              freshkill_pile=game.clan.freshkill_pile)
 
             return True
-
-        # chance to die of old age
-        age_start = game.config["death_related"]["old_age_death_start"]
-        death_curve_setting = game.config["death_related"]["old_age_death_curve"]
-        death_curve_value = 0.001 * death_curve_setting
-        # made old_age_death_chance into a separate value to make testing with print statements easier
-        old_age_death_chance = ((1 + death_curve_value) ** (cat.moons - age_start)) - 1
-        if random.random() <= old_age_death_chance:
-            handle_short_events.handle_event(event_type="birth_death",
-                                             main_cat=cat,
-                                             random_cat=random_cat,
-                                             sub_type=["old_age"],
-                                             freshkill_pile=game.clan.freshkill_pile)
-            return True
-        # max age has been indicated to be 300, so if a cat reaches that age, they die of old age
-        elif cat.moons >= 300:
-            handle_short_events.handle_event(event_type="birth_death",
-                                             main_cat=cat,
-                                             random_cat=random_cat,
-                                             sub_type=["old_age"],
-                                             freshkill_pile=game.clan.freshkill_pile)
-            return True
-
         # disaster death chance
         if game.clan.clan_settings.get('disasters'):
             if not random.getrandbits(10):  # 1/1010
